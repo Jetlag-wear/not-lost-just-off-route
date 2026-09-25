@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JETLAGWEAR — Not Lost, Just Off Route</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Arial,Helvetica,sans-serif;color:#171717;background:#fff}
+    a{text-decoration:none;color:inherit}
+    .container{max-width:1120px;margin:auto;padding:0 20px}
+    header{position:sticky;top:0;background:#fff;border-bottom:1px solid #eee;z-index:10}
+    nav{height:72px;display:flex;align-items:center;justify-content:space-between}
+    .logo{font-size:24px;font-weight:800;letter-spacing:2px}
+    .navlinks{display:flex;gap:28px;font-size:14px}
+    .hero{min-height:560px;display:grid;grid-template-columns:1fr 1fr;background:#f4f1ed}
+    .hero-text{display:flex;flex-direction:column;justify-content:center;padding:60px}
+    .eyebrow{font-size:12px;letter-spacing:3px;margin-bottom:18px}
+    h1{font-size:clamp(44px,6vw,76px);line-height:.95;margin-bottom:24px}
+    .hero p{max-width:480px;color:#555;line-height:1.7;margin-bottom:30px}
+    .btn{display:inline-block;background:#111;color:#fff;padding:14px 24px;font-size:13px;font-weight:700}
+    .hero-img{height: 360px;border-radius: 22px;overflow: hidden}
+    .hero-img img{width: 100%;height: 100%;object-fit: cover;display: block}
+    section{padding:80px 0}
+    .section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:32px}
+    .section-head h2{font-size:32px}
+    .section-head p{color:#777;font-size:14px}
+    .products{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+    .card-img img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+    .product-info{padding:14px 0}
+    .product-info h3{font-size:15px;margin-bottom:7px}
+    .price{font-size:14px;color:#555}
+    .about{background:#111;color:#fff}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+    .about h2{font-size:42px;margin-bottom:20px}
+    .about p{color:#bbb;line-height:1.8}
+    .about-img{height:420px;background:url('images/about.svg') center/cover no-repeat}
+    .cta{text-align:center;background:#f4f1ed}
+    .cta h2{font-size:38px;margin-bottom:14px}
+    .cta p{color:#666;margin-bottom:25px}
+    footer{background:#111;color:#aaa;padding:45px 0}
+    .footer-grid{display:flex;justify-content:space-between;gap:30px}
+    footer strong{color:#fff}
+    .wa{position:fixed;right:20px;bottom:20px;background:#111;color:#fff;padding:14px 18px;font-size:13px;font-weight:bold;z-index:20}
+    @media(max-width:800px){
+      .navlinks{display:none}
+      .hero{grid-template-columns:1fr}
+      .hero-img{min-height:420px}
+      .hero-text{padding:50px 25px}
+      .products{grid-template-columns:repeat(2,1fr)}
+      .about-grid{grid-template-columns:1fr}
+      .about-img{height:320px}
+      .footer-grid{flex-direction:column}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <a class="logo" href="#">JETLAG</a>
+      <div class="navlinks">
+        <a href="#koleksi">Koleksi</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#kontak">Kontak</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-text">
+      <div class="eyebrow">NEW COLLECTION</div>
+      <h1>NOT LOST<br>JUST OFF ROUTE.</h1>
+      <p>JETLAG is more than clothing. It's a state of mind.</p>
+      <div><a class="btn" href="#koleksi">LIHAT KOLEKSI</a></div>
+    </div>
+    <div class="hero-img">
+      <img src="logo-lagjet.jpg.PNG" alt="logo-lagjet">
+    </div>
+  </section>
+
+  <section id="koleksi">
+    <div class="container">
+      <div class="section-head">
+        <div><h2>Best Sellers</h2><p>Koleksi pilihan pelanggan</p></div>
+      </div>
+      <div class="products">
+        <article><div class="card-img" style="background-image:url('images/product-1.svg')">
+          <img src="caltalog-1.jpg.png" alt="caltalog-1">
+        </div><div class="product-info"><h3>Jetlag Chrome Crewneck</h3><div class="price">Rp366.000</div></div></article>
+        <article><div class="card-img" style="background-image:url('images/product-2.svg')">
+          <img src="catalog-2.jpg.png" alt="catalog-2">
+        </div><div class="product-info"><h3>Jetlag Blackout Hoodie</h3><div class="price">Rp466.000</div></div></article>
+        <article><div class="card-img" style="background-image:url('images/product-3.svg')"></div><div class="product-info"><h3>Coming Soon</h3><div class="price">Rp000.000</div></div></article>
+        <article><div class="card-img" style="background-image:url('images/product-4.svg')"></div><div class="product-info"><h3>Coming Soon</h3><div class="price">Rp000.000</div></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="tentang" class="about">
+    <div class="container about-grid">
+      <div class="about-img"></div>
+      <div>
+        <div class="eyebrow">ABOUT THE BRAND</div>
+        <h2>Dibuat untuk mereka yang memilih jalannya sendiri.</h2>
+        <p>Jetlag membawa semangat streetwear yang autentik, dengan desain yang sederhana namun memiliki karakter kuat. Setiap produk dibuat sebagai bagian dari identitas dan gaya hidup, bukan sekadar pakaian.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontak" class="cta">
+    <div class="container">
+      <h2>Ready to shop?</h2>
+      <p>Pesan produk melalui WhatsApp dan kami akan membantu prosesnya.</p>
+      <a class="btn" href="https://wa.me/6285773617229?text=Halo%20JETLAG%2C%20saya%20ingin%20memesan%20produk." target="_blank">ORDER VIA WHATSAPP</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div><strong>JETLAG</strong><br><small>Clothing with character.</small></div>
+    <div><small>Instagram: @jetlag.wear<br>Email: jetlag.wear@gmail.com</small></div>
+    <div><small>© 2026 JETLAG. All rights reserved.</small></div>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/6285773617229" target="_blank">WhatsApp</a>
+</body>
+</html>
